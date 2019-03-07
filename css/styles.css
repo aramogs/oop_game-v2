@@ -58,12 +58,19 @@ button {
   -o-transition: var(--transition);
   transition: var(--transition);
   cursor: pointer;
+  box-shadow: 3px 5px #999;
+}
+button:hover {
+  background-color: #5d5c5c;
+  color: white;
 }
 
 #btn__reset {
 	width: 200px;
 	margin: 0 auto;
 }
+
+
 
 .main-container {
   display: flex;
@@ -191,18 +198,40 @@ button {
   color: #fff;
 }
 
-.win {
-  background-color: var(--color-win);
-}
-
 .win a {
   color: var(--color-win);
-}
-
-.lose {
-  background-color: #f5785f;
 }
 
 .lose a {
   color: var(--color-lose);
 }
+
+.win{
+  background-color: var(--color-win);
+  position:relative;
+  animation:animatebottom 1s
+}
+  @keyframes animatebottom{
+    from{
+      bottom:-300px;
+      opacity:0
+    } 
+    to{
+      bottom:0;
+      opacity:1
+    }}
+
+.lose{
+  background-color: #f5785f;
+  position:relative;
+  animation:animatebottom 1s
+}
+  @keyframes animatebottom{
+    from{
+      bottom:-300px;
+      opacity:0
+    } 
+    to{
+      bottom:0;
+      opacity:1
+    }}

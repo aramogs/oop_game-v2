@@ -1,6 +1,6 @@
 /* Main styles */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
 /* Variables */
 
 :root {
@@ -60,17 +60,16 @@ button {
   cursor: pointer;
   box-shadow: 3px 5px #999;
 }
+
 button:hover {
   background-color: #5d5c5c;
   color: white;
 }
 
 #btn__reset {
-	width: 200px;
-	margin: 0 auto;
+  width: 200px;
+  margin: 0 auto;
 }
-
-
 
 .main-container {
   display: flex;
@@ -86,7 +85,7 @@ button:hover {
   padding: 10px;
 }
 
-#phrase ul li{
+#phrase ul li {
   margin-top: 15px;
 }
 
@@ -95,7 +94,6 @@ button:hover {
 .header {
   color: #3a3f58;
 }
-
 
 /* Phrase */
 
@@ -111,14 +109,12 @@ button:hover {
 }
 
 .letter_hide {
-  opacity:0;
+  opacity: 0;
 }
 
 .space {
   width: 15px;
 }
-
-
 
 .show {
   color: #fff;
@@ -132,7 +128,6 @@ button:hover {
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
 }
-
 
 /* Keyboard */
 
@@ -170,7 +165,6 @@ button:hover {
   border-right: solid 3px rgba(0, 0, 0, 0);
 }
 
-
 /* Overlay */
 
 #overlay {
@@ -206,32 +200,36 @@ button:hover {
   color: var(--color-lose);
 }
 
-.win{
+.win {
   background-color: var(--color-win);
-  position:relative;
-  animation:animatebottom 1s
+  position: relative;
+  animation: animatebottom 1s
 }
-  @keyframes animatebottom{
-    from{
-      bottom:-300px;
-      opacity:0
-    } 
-    to{
-      bottom:0;
-      opacity:1
-    }}
 
-.lose{
-  background-color: #f5785f;
-  position:relative;
-  animation:animatebottom 1s
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+  to {
+    bottom: 0;
+    opacity: 1
+  }
 }
-  @keyframes animatebottom{
-    from{
-      bottom:-300px;
-      opacity:0
-    } 
-    to{
-      bottom:0;
-      opacity:1
-    }}
+
+.lose {
+  background-color: #f5785f;
+  position: relative;
+  animation: animatebottom 1s
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
